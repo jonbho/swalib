@@ -70,10 +70,10 @@ void CORE_RenderCenteredRotatedSprite(vec2 pos, vec2 size, float angle, GLuint t
 
   glBegin( GL_QUADS );
   glColor4f(GETR(color)/255.f, GETG(color)/255.f, GETB(color)/255.f, GETA(color)/255.f);
-  glTexCoord2d(0.0,0.0); glVertex2f(-0.5f, +.5f);
-  glTexCoord2d(1.0,0.0); glVertex2f(+0.5f, +.5f);
-  glTexCoord2d(1.0,1.0); glVertex2f(+0.5f, -.5f);
-  glTexCoord2d(0.0,1.0); glVertex2f(-0.5f, -.5f);
+  glTexCoord2d(0.0,0.0); glVertex2f(-0.5f, -0.5f);
+  glTexCoord2d(1.0,0.0); glVertex2f(+0.5f, -0.5f);
+  glTexCoord2d(1.0,1.0); glVertex2f(+0.5f, +0.5f);
+  glTexCoord2d(0.0,1.0); glVertex2f(-0.5f, +0.5f);
   glEnd();
 
   glPopMatrix();
